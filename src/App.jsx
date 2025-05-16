@@ -73,7 +73,6 @@ function App() {
       { source: july2025Img4, altText: "image4" },
       { source: july2025Img5, altText: "image5" },
       { source: july2025Img6, altText: "image6" },
-      { source: july2025Img6, altText: "image6" },
       { source: july2025Img7, altText: "image7" },
     ],
   };
