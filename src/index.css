@@ -237,3 +237,12 @@ footer {
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
   user-select: none;
 }
+
+/* ✅ Mobile styles */
+@media (max-width: 600px) {
+  .gallery-btn {
+    width: 90dvw;
+    height: 150px;
+    aspect-ratio: auto; /* Disable square aspect for mobile layout */
+  }
+}
