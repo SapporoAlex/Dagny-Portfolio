@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sapporoalex.github.io/dagny-portfolio",
+  "homepage": "https://sapporoalex.github.io/Dagny-Portfolio",
   "scripts": {
-    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
