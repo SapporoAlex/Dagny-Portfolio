@@ -15,21 +15,23 @@ function GalleryMenu({ galleryList, setSelectedGallery }: Props) {
         <h2>Galleries</h2>
         <div id="galleries">
           {galleryList.map((gallery, index) => (
-            <div
-              key={index}
-              className="gallery-btn"
-              onClick={() => {
-                setSelectedGallery(gallery.galleryName);
-                document
-                  .getElementById("work-section")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-              style={{
-                cursor: "pointer",
-                backgroundImage: `url(${gallery.galleryImg})`,
-              }}
-            >
-              <h2>{gallery.galleryName}</h2>
+            <div className="gallery-btn-frame">
+              <div
+                key={index}
+                className="gallery-btn"
+                onClick={() => {
+                  setSelectedGallery(gallery.galleryName);
+                  document
+                    .getElementById("work-section")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+                style={{
+                  cursor: "pointer",
+                  backgroundImage: `url(${gallery.galleryImg})`,
+                }}
+              >
+                <h2>{gallery.galleryName}</h2>
+              </div>
             </div>
           ))}
         </div>
