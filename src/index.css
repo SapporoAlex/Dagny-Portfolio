@@ -190,7 +190,7 @@ header .btn:hover {
 .work-list {
 
   display: grid;
-  padding: 1rem 2rem 4rem 2rem;
+  padding: 1rem 0;
   background-color: #f9f9f9;
   margin: 0 auto;
 }
