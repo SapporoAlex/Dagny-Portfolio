@@ -12,7 +12,7 @@ function GalleryMenu({ galleryList, setSelectedGallery }: Props) {
   return (
     <>
       <div id="galleries-start">
-        <h2>Galleries</h2>
+        <h2>View a Gallery</h2>
         <div id="galleries">
           {galleryList.map((gallery, index) => (
             <div className="gallery-btn-frame">
