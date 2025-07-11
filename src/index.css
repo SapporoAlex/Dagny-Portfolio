@@ -188,7 +188,7 @@ header .btn:hover {
 }
 
 .work-list {
-  max-width: 1000px;
+
   display: grid;
   padding: 1rem 2rem 4rem 2rem;
   background-color: #f9f9f9;
@@ -295,7 +295,7 @@ footer {
   }
     
   .image-card {
-    width: min(250px 90%);
+    width: min(250px 95%);
     height: auto;
     overflow: hidden;
     border-radius: 0px;
