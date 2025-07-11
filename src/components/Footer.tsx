@@ -2,7 +2,8 @@ function Footer() {
   return (
     <>
       <footer>
-        <p>&copy; {new Date().getFullYear()} Dagny Strand</p>
+        <a href="https://www.instagram.com/dagnystrand"
+          target="_blank"><p>&copy; {new Date().getFullYear()} Dagny Strand</p></a>
       </footer>
     </>
   );
