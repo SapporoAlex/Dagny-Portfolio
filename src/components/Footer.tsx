@@ -1,15 +1,19 @@
+import styles from "./Footer.module.css";
+
 function Footer() {
   return (
-    <>
-      <footer>
-          <a 
-          id="credits"
-          href="https://www.instagram.com/dagnystrand"
-          target="_blank">
-            <p>&copy; {new Date().getFullYear()} Dagny Strand</p>
-          </a>
-      </footer>
-    </>
+    <footer className={styles.footer}>
+      <a
+        className={styles.instagramLink}
+        href="https://www.instagram.com/dagnystrand"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i className="fa-brands fa-instagram" aria-hidden="true"></i>
+        <span>@dagnystrand</span>
+      </a>
+      <p className={styles.credits}>&copy; {new Date().getFullYear()} Dagny Strand</p>
+    </footer>
   );
 }
 

@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+  --color-bg: #f8f8f8;
+  --color-bg-muted: rgb(240 240 240);
+  --color-text: #333;
+  --color-heading: #222;
+  --color-white: #fff;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-overlay-strong: rgba(0, 0, 0, 0.6);
+  --color-card-bg: #e5e5e5;
+  --color-footer-bg: #1c1c1c;
+  --color-footer-text: rgba(255, 255, 255, 0.55);
+  --color-footer-border: rgba(255, 255, 255, 0.25);
+
+  /* Typography */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+
+  /* Effects */
+  --shadow-image: 0 2px 24px rgba(0, 0, 0, 0.08);
+  --shadow-nav: 0 1px 0 rgba(0, 0, 0, 0.06);
+  --transition-fast: 0.25s ease;
+  --transition-base: 0.35s ease;
+  --transition-slow: 0.7s ease;
+
+  /* Layering */
+  --z-nav: 500;
+  --z-modal: 1000;
+}

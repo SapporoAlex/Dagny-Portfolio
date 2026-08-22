@@ -1,0 +1,78 @@
+.heroHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--color-white);
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroSlides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroSlide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.8s ease;
+}
+
+.heroSlideActive {
+  opacity: 1;
+}
+
+.heroHeader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-overlay);
+  z-index: 1;
+}
+
+.heroHeader h1,
+.heroHeader p,
+.btn {
+  position: relative;
+  z-index: 2;
+}
+
+.heroHeader h1 {
+  color: var(--color-bg);
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.heroHeader p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: var(--color-white);
+  color: #2c3e50;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition-base), transform var(--transition-fast);
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}

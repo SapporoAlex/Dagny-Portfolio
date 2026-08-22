@@ -1,0 +1,98 @@
+.workList {
+  padding: 7rem 1.5rem 5rem;
+}
+
+.workList h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 0 0 4rem;
+}
+
+.imageColumn {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.imageCard {
+  cursor: zoom-in;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.imageCardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.imageCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: var(--shadow-image);
+  transition: opacity var(--transition-fast);
+}
+
+.imageCard:hover img {
+  opacity: 0.92;
+}
+
+.backLink {
+  display: block;
+  width: fit-content;
+  margin: 5rem auto 0;
+  color: var(--color-heading);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: letter-spacing var(--transition-fast);
+}
+
+.backLink:hover {
+  letter-spacing: 2.5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-modal);
+  cursor: zoom-out;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .workList {
+    padding: 5.5rem 1rem 3.5rem;
+  }
+
+  .imageColumn {
+    gap: 3.5rem;
+  }
+}
